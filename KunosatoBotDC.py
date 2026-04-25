@@ -77,7 +77,7 @@ async def chef_g(ctx):
     embed9.set_image(url="https://cdn.discordapp.com/attachments/1046810298075582518/1473835200869044357/caption.gif?ex=69ed58fe&is=69ec077e&hm=f4bc9797ca9b48a57e1a50344b8bcbbde56f4f8cce4b5b363f7416c22972c117&")
     embed10 = discord.Embed(url=glink, title="Meal Gallery")
     embed10.set_image(url="https://media.discordapp.net/attachments/1104321989100974163/1495188822898638928/IMG_3943.gif?ex=69ede85a&is=69ec96da&hm=5543273932ff42b57d8dee42bfed1bc144c2aaafa0a5f7b6845e18197b930e81&=")
-    await ctx.send(f"CLICK ON A GIF THEN PRESS THE ARROWS TO GET MORE, THERE IS 10 IN THIS SECTION" embeds=[embed1,embed2,embed3,embed4,embed5,embed6,embed7,embed8,embed9,embed10],ephemeral=True)
+    await ctx.send(f"CLICK ON A GIF THEN PRESS THE ARROWS TO GET MORE, THERE IS 10 IN THIS SECTION",embeds=[embed1,embed2,embed3,embed4,embed5,embed6,embed7,embed8,embed9,embed10],ephemeral=True)
 
     
 
