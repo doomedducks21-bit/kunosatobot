@@ -52,7 +52,7 @@ async def butcher_g(ctx):
     embed4 = discord.Embed(url=glink, title="Butcher Gallery")
     embed4.set_image(url="https://cdn.discordapp.com/attachments/1473382001573625906/1479984517153296476/caption.gif?ex=69ed4e7d&is=69ebfcfd&hm=33cfd25d7b6c5e7ec123be930d0c4d7c720dd4faceca2ec936700af871ef4afc&")
     await ctx.send(embeds=[embed1,embed2,embed3,embed4],ephemeral=True)
-@bot.hybrid_command(name="chef's kiss", description="who wants a meal")
+@bot.hybrid_command(name="chefs_kiss", description="meal")
 @discord.app_commands.allowed_installs(guilds=True,users=True)
 @discord.app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
 async def chef_g(ctx):
