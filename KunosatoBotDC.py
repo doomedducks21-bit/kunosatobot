@@ -1,4 +1,6 @@
 
+import dis
+import string
 import discord
 import logging
 import os
@@ -107,5 +109,9 @@ async def method_g(ctx, hidden : bool):
     embed4 = discord.Embed(url=glink, title="Roblox create imagine explore")
     embed4.set_image(url="https://media.discordapp.net/attachments/893508396718911511/1152971856735903826/nBOuHUOW.gif?ex=69ed75f7&is=69ec2477&hm=06fdedbb4fe243e9fed4c92228f904ac46a437efa1baa2d1faed7e53e64ba63e&")
     await ctx.send(embeds=[embed1,embed2,embed3,embed4],ephemeral=hidden)
-
+@bot.hybrid_command(name="message",description="make her send a msg")
+@discord.app_commands.allowed_installs(guilds=True,users=True)
+@discord.app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+async def msg(ctx, msgcontent : str, target : discord.Member):
+        await ctx.send(f"{target}, {msgcontent}")
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
