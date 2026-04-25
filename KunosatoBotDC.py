@@ -57,7 +57,7 @@ async def butcher_g(ctx):
 @discord.app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
 async def chef_g(ctx):
     glink = "https://cdn.discordapp.com/attachments/1473382001573625906/1489007834606731365/caption.gif?ex=69ed2c9c&is=69ebdb1c&hm=1ce9a1e11068b7dfd6a107b14af1a51192a7dee6a2ac13d1e655c00e415d2bbc&"
-    embed1 = discord.Embed(url=glink, title="Meal Gallery")
+    embed1 = discord.Embed(url=glink, title="CLICK ON A GIF THEN PRESS THE ARROWS TO GET MORE, THERE IS 10 IN THIS SECTION")
     embed1.set_image(url="https://cdn.discordapp.com/attachments/1046810298075582518/1473369102549516389/caption.gif?ex=69eda127&is=69ec4fa7&hm=b5f5c4e34ada4b6dc8b28ea2cc550b9b617a9e48e445265c8911fa01aebb0a45")
     embed2 = discord.Embed(url=glink, title="Meal Gallery")
     embed2.set_image(url="https://cdn.discordapp.com/attachments/1420498313555480606/1422979708462829568/caption.gif?ex=69ed90e0&is=69ec3f60&hm=02d66cc40c125b54ce34195003d07f7481d695c73d9909b92d0d54253cb92bf4&")
@@ -77,7 +77,7 @@ async def chef_g(ctx):
     embed9.set_image(url="https://cdn.discordapp.com/attachments/1046810298075582518/1473835200869044357/caption.gif?ex=69ed58fe&is=69ec077e&hm=f4bc9797ca9b48a57e1a50344b8bcbbde56f4f8cce4b5b363f7416c22972c117&")
     embed10 = discord.Embed(url=glink, title="Meal Gallery")
     embed10.set_image(url="https://media.discordapp.net/attachments/1104321989100974163/1495188822898638928/IMG_3943.gif?ex=69ede85a&is=69ec96da&hm=5543273932ff42b57d8dee42bfed1bc144c2aaafa0a5f7b6845e18197b930e81&=")
-    await ctx.send(embeds=[embed1,embed2,embed3,embed4,embed5,embed6,embed7,embed8,embed9,embed10],ephemeral=True)
+    await ctx.send(f"CLICK ON A GIF THEN PRESS THE ARROWS TO GET MORE, THERE IS 10 IN THIS SECTION" embeds=[embed1,embed2,embed3,embed4,embed5,embed6,embed7,embed8,embed9,embed10],ephemeral=True)
 
     
 
