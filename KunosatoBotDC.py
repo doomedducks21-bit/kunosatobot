@@ -1,10 +1,11 @@
-import dis
+
 import discord
 import logging
 import os
 from discord.ext import commands
 from dotenv import load_dotenv
-
+import webserver
+webserver.keep_alive()
 load_dotenv()
 token = os.getenv("DISCORD_TOKEN")
 handler = logging.FileHandler(filename="discord.log", encoding="UTF-8", mode="w")
@@ -52,4 +53,5 @@ async def butcher_g(ctx):
     embed4.set_image(url="https://cdn.discordapp.com/attachments/1473382001573625906/1479984517153296476/caption.gif?ex=69ed4e7d&is=69ebfcfd&hm=33cfd25d7b6c5e7ec123be930d0c4d7c720dd4faceca2ec936700af871ef4afc&")
     await ctx.send(embeds=[embed1,embed2,embed3,embed4],ephemeral=True)
     
+
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
