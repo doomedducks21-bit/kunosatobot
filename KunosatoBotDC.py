@@ -52,6 +52,33 @@ async def butcher_g(ctx):
     embed4 = discord.Embed(url=glink, title="Butcher Gallery")
     embed4.set_image(url="https://cdn.discordapp.com/attachments/1473382001573625906/1479984517153296476/caption.gif?ex=69ed4e7d&is=69ebfcfd&hm=33cfd25d7b6c5e7ec123be930d0c4d7c720dd4faceca2ec936700af871ef4afc&")
     await ctx.send(embeds=[embed1,embed2,embed3,embed4],ephemeral=True)
+@bot.hybrid_command(name="chef's kiss", description="who wants a meal")
+@discord.app_commands.allowed_installs(guilds=True,users=True)
+@discord.app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+async def chef_g(ctx):
+    glink = "https://cdn.discordapp.com/attachments/1473382001573625906/1489007834606731365/caption.gif?ex=69ed2c9c&is=69ebdb1c&hm=1ce9a1e11068b7dfd6a107b14af1a51192a7dee6a2ac13d1e655c00e415d2bbc&"
+    embed1 = discord.Embed(url=glink, title="Meal Gallery")
+    embed1.set_image(url="https://cdn.discordapp.com/attachments/1046810298075582518/1473369102549516389/caption.gif?ex=69eda127&is=69ec4fa7&hm=b5f5c4e34ada4b6dc8b28ea2cc550b9b617a9e48e445265c8911fa01aebb0a45")
+    embed2 = discord.Embed(url=glink, title="Meal Gallery")
+    embed2.set_image(url="https://cdn.discordapp.com/attachments/1420498313555480606/1422979708462829568/caption.gif?ex=69ed90e0&is=69ec3f60&hm=02d66cc40c125b54ce34195003d07f7481d695c73d9909b92d0d54253cb92bf4&")
+    embed3 = discord.Embed(url=glink, title="Meal Gallery")
+    embed3.set_image(url="https://media.discordapp.net/attachments/1046810298075582518/1470894512330117173/togif.gif?ex=69eddb03&is=69ec8983&hm=e47029116a3fc875d69e7ad70ed227d129fa947d136163fe1afa4a02664caa5e&=&width=190&height=300")
+    embed4 = discord.Embed(url=glink, title="Meal Gallery")
+    embed4.set_image(url="https://media.discordapp.net/attachments/1046810298075582518/1468650873616990422/togif.gif?ex=69ed9a76&is=69ec48f6&hm=a9e753e6bda07df55fc6cd1bfd4636eb283b5bff05b9a79bb3bdbaa280f0dc0f&=&width=400&height=256")
+    embed5 = discord.Embed(url=glink, title="Meal Gallery")
+    embed5.set_image(url="https://media.discordapp.net/attachments/1328152654240682006/1464578459320713236/caption-48.gif?ex=69edf2fb&is=69eca17b&hm=d5bc055151aff9803fba3d5357f115b6d7799188bc5b2f19a7aabfa5a9b39b99&=")
+    embed6 = discord.Embed(url=glink, title="Meal Gallery")
+    embed6.set_image(url="https://media.discordapp.net/attachments/1469727517563944960/1489007455139532830/caption.gif?ex=69edd501&is=69ec8381&hm=ee66d56d33f93bd4bcf966f2cd14e89452f9aad731ae24477f918219b66050c7&=&width=211&height=300")
+    embed7 = discord.Embed(url=glink, title="Meal Gallery")
+    embed7.set_image(url="https://cdn.discordapp.com/attachments/1447640578123632782/1491875526531481814/caption.3535332c.gif?ex=69edb81b&is=69ec669b&hm=46f14f927fb538715230a446c1a3184d69ce024ab3ca364b3b2720501e5b5cbe&")
+    embed8 = discord.Embed(url=glink, title="Meal Gallery")
+    embed8.set_image(url="https://cdn.discordapp.com/attachments/1473382001573625906/1496927784453279916/togif.gif?ex=69eda463&is=69ec52e3&hm=5567157f608f665e3cc29efa37405af585abb9419f7b38cd3d4231968a7ac954&")
+    embed9 = discord.Embed(url=glink, title="Meal Gallery")
+    embed9.set_image(url="https://cdn.discordapp.com/attachments/1046810298075582518/1473835200869044357/caption.gif?ex=69ed58fe&is=69ec077e&hm=f4bc9797ca9b48a57e1a50344b8bcbbde56f4f8cce4b5b363f7416c22972c117&")
+    embed10 = discord.Embed(url=glink, title="Meal Gallery")
+    embed10.set_image(url="https://media.discordapp.net/attachments/1104321989100974163/1495188822898638928/IMG_3943.gif?ex=69ede85a&is=69ec96da&hm=5543273932ff42b57d8dee42bfed1bc144c2aaafa0a5f7b6845e18197b930e81&=")
+    await ctx.send(embeds=[embed1,embed2,embed3,embed4,embed5,embed6,embed7,embed8,embed9,embed10],ephemeral=True)
+
     
 
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
